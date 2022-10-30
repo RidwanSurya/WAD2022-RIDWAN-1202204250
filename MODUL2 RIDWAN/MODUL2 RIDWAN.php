@@ -30,7 +30,7 @@
         <div class="row align-items-start">
             <div class="col-sm-4">
                 <div class="card" style="width: 18rem; margin-left: auto ; margin-right:auto">
-                    <img src="mercy.jpg" class="card-img-top" alt="xpander_img">
+                    <img src="mercy.jpg" class="card-img-top">
 
                     <div class="card-body">
                         <h5 class="card-title">Mercy</h5>
@@ -42,14 +42,14 @@
                         <center><li class="list-group-item">Matic</li></center>
                     </ul>
                     <div class="card-body" style="margin-left: auto ; margin-right:auto">
-                        <a href="#" class="btn btn-primary">Book Now</a>
+                        <a href="BOOKING.php" class="btn btn-primary">Book Now</a>
                     </div>
                 </div>
             </div>
                 
             <div class="col-sm-4">
                 <div class="card" style="width: 20rem; margin-left: auto ; margin-right:auto">
-                    <img src="gtr.jpeg" class="card-img-top" alt="xpander_img">
+                    <img src="gtr.jpeg" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">GTR </h5>
                         <p class="card-text">Mulai Rp 1.400.000 per Jam</p>
@@ -60,14 +60,14 @@
                         <center><li class="list-group-item">Manual 10-Speed</li></center>
                     </ul>
                     <div class="card-body" style="margin-left: auto ; margin-right:auto">
-                        <a href="#" class="btn btn-primary">Book Now</a>
+                        <a href="BOOKING.php" class="btn btn-primary">Book Now</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-sm-4">
               <div class="card" style="width: 18rem; margin-left: auto ; margin-right:auto">
-                <img src="rr.jpg" class="card-img-top" alt="xpander_img">
+                <img src="rr.jpg" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Rolls Royce</h5>
                     <p class="card-text">Mulai Rp100.000 per Detik</p>
@@ -78,7 +78,7 @@
                     <center><li class="list-group-item">Matic 6-Speed</li></center>
                 </ul>
                 <div class="card-body" style="margin-left: auto ; margin-right:auto">
-                    <a href="#" class="btn btn-primary">Book Now</a>
+                    <a href="BOOKING.php" class="btn btn-primary">Book Now</a>
                 </div>
             </div>
         </div>
