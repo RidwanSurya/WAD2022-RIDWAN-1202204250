@@ -16,7 +16,7 @@ if (isset($_POST['submit'])){
     move_uploaded_file($temp, '../Asset/image/'.$foto);
     $pembayaran = $_POST['pembayaran'];
 
-    $query = mysqli_query($connect, "INSERT INTO showroom_ridwan_table(id_mobil,NamaMobil, namaPemilik, merk, TanggalBeli, deskripsi, foto, pembayaran)
+    $query = mysqli_query($connect, "INSERT INTO showroom_ridwan_table(id_mobil,nama_mobil, pemilik_mobil, merk_mobil, tanggal_beli, deskripsi, foto_mobil, status_pembayaran)
     VALUES('$idMobil','$NamaMobil','$namaPemilik','$merk','$tglBeli','$deskripsi','$foto','$pembayaran')");
 
     if ($query){

@@ -1,9 +1,11 @@
-<?php
-  $host="localhost:3308";
-  $user="root";
-  $password="";
-  $db="showroom_nasywan_table";
+<?php 
+  include "../config/connector.php";
 
-  $kon = mysqli_connect($host,$user,$password,$db);
+  
+    $id = $_GET["id_mobil"];
+    mysqli_query($connect, "DELETE FROM showroom_ridwan_table WHERE id_mobil = $id");
+    header('Location: ..\pages\ListCar-Ridwan.php');
+  
+    mysqli_query($kon, $query);
   
 ?>

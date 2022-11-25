@@ -18,7 +18,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
             <a class="nav-link active" href="../index.php">Home</a>
-            <a class="nav-link active" href="#">MyCar</a>
+            <a class="nav-link active" href="../Pages/ListCar-Ridwan.php">MyCar</a>
         </div>
         </div>
     </div>
@@ -75,7 +75,7 @@
                 </div>
                 </br>
                 </br>
-                <button type="submit" class="btn btn-primary" role="button" name="submit">Selesai</button>
+                <button type="submit" class="btn btn-primary" role="button" name="submit" href="../Pages/ListCar-Ridwan.php" >Selesai</button>
                 </form> 
         </div>
     </div>
