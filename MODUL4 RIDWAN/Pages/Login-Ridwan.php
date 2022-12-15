@@ -1,3 +1,34 @@
+<?php
+include ('../Config/connector.php');
+session_start();
+ 
+if (isset($_SESSION['email'])) {
+      header("Location:");
+}
+ 
+if (isset($_POST['submit'])) {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+ 
+    $sql = "SELECT * FROM  WHERE email='$email' AND password='$password'";
+    $result = mysqli_query($connect, $sql);
+    $user= mysqli_fetch_array($result);
+    if ($result->num_rows > 0) {
+        $row = mysqli_fetch_assoc($result);
+        $_SESSION['email'] = $row['email'];
+        header("Location:"); 
+        echo "<script>alert('Berhasil Login')</script>";
+        if($_POST['remember']== true) {
+          setcookie("simpan_email", $_POST["email"], time()+(60*60));
+          setcookie("simpan_password",$_POST["password"], time()+(60*60));
+          $_SESSION['email'] = $email;
+        }
+    } else {
+        echo "<script>alert('Email atau password Anda salah, coba lagi!')</script>";
+    }
+}
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -30,7 +61,7 @@
                 <input type="checkbox" class="form-check-input" name="remember" value="true">
                 <label class="form-check-label" for="exampleCheck1">Remember me</label>
             </div>
-            <button type="submit" class="btn btn-primary" name="submit">Login</button>
+            <button type="submit" class="btn btn-primary" name="submit" href="Home2-Ridwan.php">Login</button>
             <p class="mb-4" style="text-align: left,">Anda belum punya akun? <a href="Register-Ridwan.php">Daftar</a></p>
         </form>
     </div>

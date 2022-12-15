@@ -2,7 +2,7 @@
     $host="localhost:3308";
     $user="root";
     $password="";
-    $db="modul3";
+    $db="wad_modul4_ridwan";
     
     $connect = mysqli_connect($host,$user,$password,$db);
     if (!$connect){

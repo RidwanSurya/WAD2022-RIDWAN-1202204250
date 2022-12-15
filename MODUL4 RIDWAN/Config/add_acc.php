@@ -1,5 +1,5 @@
 <?php
-    include('connect.php');
+    include('connector.php');
     $email = $_POST['email'];
     $nama = $_POST['nama'];
     $no_hp = $_POST['no_hp'];
