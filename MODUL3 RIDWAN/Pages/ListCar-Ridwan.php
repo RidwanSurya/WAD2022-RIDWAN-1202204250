@@ -8,7 +8,7 @@
   </head>
   <body>
 <?php
-    include('..\config\connector.php');
+    includ('..\config\connector.php');
     $query = mysqli_query($connect,"SELECT id_mobil FROM `showroom_ridwan_table`");
     $jumlah = mysqli_num_rows($query);
     $ambil = mysqli_query($connect, "SELECT * FROM `showroom_ridwan_table`");
